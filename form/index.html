@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hazard Design-Daftar Akun</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./img/icon.png">
+</head>
+  <body>
+    <div class="container">
+      <form autocomplete="off">
+        <h4>Buat Akun</h4>
+        <div class="input-section">
+          <label>Nama Depan <span class="required-color">*</span></label>
+          <input
+            type="text"
+            placeholder="Masukan Nama anda"
+            id="first-name-input"
+            required
+          />
+          <span id="first-name-error" class="hide required-color error-message"
+            >ketik dengan benar</span
+          >
+          <span id="empty-first-name" class="hide required-color error-message"
+            >Nama depan tidak boleh kosong</span
+          >
+        </div>
+        <div class="input-section">
+          <label>Nama Terakhir <span class="required-color">*</span></label>
+          <input
+            type="text "
+            placeholder="Masukan Nama Terakhir Anda"
+            id="last-name-input"
+            required
+          />
+          <span id="last-name-error" class="hide required-color error-message"
+            >Ketik dengan benar</span
+          >
+          <span id="empty-last-name" class="hide required-color error-message">
+            Nama terakhir tidak boleh kosong
+          </span>
+        </div>
+
+        <div class="input-section">
+          <label>Email <span class="required-color">*</span></label>
+          <input type="email" placeholder="Masukan Email" id="email" required />
+          <span id="email-error" class="hide required-color error-message"
+            >Email tidak valid</span
+          >
+          <span id="empty-email" class="hide required-color error-message"
+            >Email tidk boleh kosong</span
+          >
+        </div>
+
+        <div class="input-section">
+          <label>No HP <span class="required-color">*</span></label>
+          <input
+            type="text"
+            placeholder="Masukan No HP"
+            id="phone"
+            required
+          />
+          <span id="phone-error" class="hide required-color error-message"
+            >Nomer HP harus minimal 10 digit</span
+          >
+          <span id="empty-phone" class="hide required-color error-message">
+            No HP tidak boleh kosong
+          </span>
+        </div>
+
+        <div class="input-section">
+          <label>Password <span class="required-color">*</span></label>
+          <input
+            type="password"
+            placeholder="Masukan Password"
+            id="password"
+            required
+          />
+          <span id="password-error" class="hide required-color error-message">
+            Kata Sandi Harus Memiliki Huruf, Simbol Khusus, Angka, dan Panjang >=
+            8
+          </span>
+          <span id="empty-password" class="hide required-color error-message">
+            Password tidak boleh kosong
+          </span>
+        </div>
+
+        <div class="input-section">
+          <label>Konfirmasi Password <span class="required-color">*</span></label>
+          <input
+            type="password"
+            id="verify-password"
+            placeholder="Konfirmasi Password"
+            required
+          />
+          <span
+            id="verify-password-error"
+            class="hide required-color error-message"
+            >Harus Sama Dengan Kata Sandi Sebelumnya</span
+          >
+          <span
+            id="empty-verify-password"
+            class="hide required-color error-message"
+            >Password tidak boleh kosong</span
+          >
+        </div>
+        <button id="submit-button">Daftar</button>
+      </form>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
